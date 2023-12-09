@@ -6,6 +6,7 @@ from rclpy.node import Node
 class MyCustomNode(Node): # MODIFY NAME
     def __init__(self):
         super().__init__("node_name") # MODIFY NAME
+        self.pub_ = self.create_publisher(String, "topic_name", 10) # MODIFY NAME
  
  
 def main(args=None):
